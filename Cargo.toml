@@ -2,5 +2,31 @@
 name = "input-lib"
 version = "0.1.0"
 edition = "2024"
+repository = "https://github.com/Phosphorus-M/input-lib"
+description = "A basic library for reading input with prompts and parsing."
+license = "MIT OR Apache-2.0"
+authors = ["Phosphorus-M"]
+categories = ["command-line-utilities", "parser-implementations", "parsing"]
 
 [dependencies]
+
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+
+[[example]]
+name = "intermediate"
+path = "examples/intermediate.rs"
+
+[[example]]
+name = "comprehensive-error-handling"
+path = "examples/comprehensive_error_handling.rs"
+
+[[example]]
+name = "typing-error"
+path = "examples/typing_error.rs"
+
+[package.metadata.docs.rs]
+cargo-args = ["-Zunstable-options", "-Zrustdoc-scrape-examples"]
+
